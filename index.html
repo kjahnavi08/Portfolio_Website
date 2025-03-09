@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6ce7f05da7.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#about">Education</a></li>
+                    <li><a href="#about">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+                
+            </nav>
+            <div class="header-text">
+                <p>Software Developer & Data Analyst</p>
+                <h1>Hi, I'm <span> K Jahnavi</span><br>from India</h1>
+            </div>      
+        </div>  
+    </div>
+
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/abt.webp" alt="">
+                </div>
+                <div class="col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Passionate Computer Science student with a strong foundation in Python, Java and Web Technologies. Adept at analyzing complex problems, optimization and collaborating in team environments. Seeking opportunities to leverage technical and analytical skills to contribute to innovative projects and advance professionally.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links  active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Python, Java, C, C++, JavaScript, SQL</li>
+                            <li><span>Web Development</span><br>React, Tailwind CSS</li>
+                            <li><span>AI/ML \& Data Analytics</span><br>Data Visualization, Power BI, DAX, TensorFlow</li>
+                            <li><span>Tools</span><br>Google Colab, Jupyter</li>
+                            <li><span>Methodologies</span><br>SDLC, Agile</li>
+                            <li><span>Soft Skills</span><br>Team work, Communication, Problem Solving, Leadership</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology (2023-2027)</span><br>Velagapudi Ramakrishna Siddhartha Engineering College<br>Computer Science and Engineering, CGPA: 9.52</li>
+                            <li><span>Intermediate (2021-2023)</span><br>Amaravathi Junior College <br>Score: 981/1000</li>
+                            <li><span>SSC (2021)</span><br>Nirmala High School <br>Percentage: 95%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="interests">
+                        <ul>
+                            <li><span>Stocks and Finance Markets</span></li>
+                            <li><span>Reading Novels</span></li>
+                            <li><span>Giving Book and TV Show Reviews</span><br></li>
+                            <li><span>Cooking, Dancing</span></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!--projects-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="proj-list">
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2><strong>Personal Portfolio Website</strong></h2>
+                    <p>Developed a responsive portfolio website using HTML, CSS, and JavaScript. Integrated an interactive UI and contact form for better user engagement. Optimized for performance and  cross-device compatibility.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2><strong>Sales Dashboards</strong></h2>
+                    <p>Built interactive sales dashboards in Power BI using data sets to analyze key business metrics such as total sales, profit margins, regional performance and product category trends. Designed dynamic visualizations, implemented DAX measures for insightful analysis and efficient reporting.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-comments"></i>
+                    <h2><strong>ANTARES - A Real-Time Space Community Chat Platform</strong></h2>
+                    <p>Developing a web-based application for space enthusiasts featuring real-time chat rooms, a space event calendar API integration, and a user-driven space art gallery. </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--certifications-->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="subtitle">Certifications</h1>
+            <div class="certlist">
+                <div class="cert">
+                    <img src="images/CS50.png" alt="">
+                    <div class="layer">
+                        <h3> CS50's Introduction to Programming with Python</h3>
+                        <p>Offered by Harvard University</p>
+                        <p>Gained expertise in Python programming, algorithms, and problem-solving techniques.</p>
+                        <a href="images/CS50P.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="cert">
+                    <img src="images/cisco.jpeg" alt="">
+                    <div class="layer">
+                        <h3>CLA: Programming Essentials in C</h3>
+                        <p>Lorem ipsum dolor sit amet m recndae explicabo ipsum voluptatem laudantium sit.</p>
+                        <a href="images/Cisco.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="cert">
+                    <img src="images/ehack.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Ethical Hacking</h3>
+                        <p>Offered by NPTEL(IIT Kharagpur)</p>
+                        <p>Learnt cyber security fundamentals, penetration testing, and ethical hacking practices.</p>
+                        <a href="images/ehack.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="cert">
+                    <img src="images/infosys.png" alt="">
+                    <div class="layer">
+                        <h3>Java Programming Fundamentals</h3>
+                        <p>Offered by Infosys Sprinboard</p>
+                        <p>Learnt the core principles of Java, focusing on object-oriented programming, exception handling, multi-threading, and database connectivity to develop robust applications.</p>
+                        <a href="images/infosys.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> kjahnavi1868@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +(91) 9032557059</p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/jahnavi-kommineni-4423b42a4/"><i class="fa-brands fa-linkedin"></i>KOMMINENI JAHNAVI</a>
+                </div>
+            </div>
+            
+            <div class="right"></div>
+                <form>
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Enter Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©️ </p>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
